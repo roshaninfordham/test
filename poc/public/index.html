@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Next.js 15 Demo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #fafafa;
+      color: #1a1a2e;
+      line-height: 1.6;
+    }
+    .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+    header {
+      text-align: center;
+      padding: 4rem 0 2rem;
+      border-bottom: 1px solid #e2e8f0;
+      margin-bottom: 2rem;
+    }
+    h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .subtitle { color: #64748b; font-size: 1.1rem; }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      transition: box-shadow 0.2s;
+    }
+    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+    .card p { font-size: 0.875rem; color: #64748b; }
+    .tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .tech-tag {
+      background: #e2e8f0;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    .note {
+      background: #f1f5f9;
+      border-left: 3px solid #3b82f6;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin: 2rem 0;
+      font-size: 0.9rem;
+    }
+    .note strong { color: #1e293b; }
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #94a3b8;
+      font-size: 0.875rem;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 2rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f172a; color: #e2e8f0; }
+      .card { background: #1e293b; border-color: #334155; }
+      .note { background: #1e293b; border-left-color: #60a5fa; }
+      .note strong { color: #f1f5f9; }
+      .tech-tag { background: #334155; color: #cbd5e1; }
+      header { border-color: #334155; }
+      .subtitle { color: #94a3b8; }
+      footer { border-color: #334155; color: #64748b; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Portfolio WebApp</h1>
+      <p class="subtitle">Built with Next.js 15, React 19 &amp; Tailwind CSS v4</p>
+    </header>
+
+    <h2>Tech Stack</h2>
+    <div class="tech-list">
+      <span class="tech-tag">Next.js 15</span>
+      <span class="tech-tag">React 19</span>
+      <span class="tech-tag">TypeScript</span>
+      <span class="tech-tag">Tailwind CSS v4</span>
+      <span class="tech-tag">shadcn/ui</span>
+      <span class="tech-tag">Lucide React</span>
+    </div>
+
+    <h2>Key Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>App Router</h3>
+        <p>Next.js 15 layout system with server components and static generation.</p>
+      </div>
+      <div class="card">
+        <h3>Dark Mode</h3>
+        <p>System-aware theme toggle with persistent localStorage preferences.</p>
+      </div>
+      <div class="card">
+        <h3>Bento Grid</h3>
+        <p>Responsive dashboard-style layout for showcasing projects and skills.</p>
+      </div>
+      <div class="card">
+        <h3>Markdown Content</h3>
+        <p>Blog and project pages powered by local MDX files with frontmatter.</p>
+      </div>
+      <div class="card">
+        <h3>Static Generation</h3>
+        <p>Optimized builds with generateStaticParams for pre-rendered pages.</p>
+      </div>
+      <div class="card">
+        <h3>shadcn/ui</h3>
+        <p>Accessible, reusable UI primitives built on Radix and class-variance-authority.</p>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Note:</strong> This is a static preview of the Portfolio WebApp. The full application includes dynamic routing for projects and blog posts, a theme toggle with dark/light mode, interactive bento grid, and markdown-based content management.
+    </div>
+
+    <h2>Pages</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Home</h3>
+        <p>Hero section, bento grid skills showcase, and latest work highlights.</p>
+      </div>
+      <div class="card">
+        <h3>/projects</h3>
+        <p>Grid of project cards with tag filtering and detail pages.</p>
+      </div>
+      <div class="card">
+        <h3>/blog</h3>
+        <p>Markdown-powered blog engine with tag-based categorization.</p>
+      </div>
+    </div>
+
+    <footer>
+      Portfolio WebApp &mdash; Built via Software Factory
+    </footer>
+  </div>
+</body>
+</html>
