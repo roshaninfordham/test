@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Web Platform",
+    "description": "A full-stack web application built with Next.js and TypeScript, featuring real-time data updates and responsive design.",
+    "tags": ["Next.js", "TypeScript", "Tailwind"]
+  },
+  {
+    "title": "AI Toolkit",
+    "description": "Machine learning pipeline for data analysis and prediction, built with Python and TensorFlow.",
+    "tags": ["Python", "TensorFlow"]
+  },
+  {
+    "title": "Mobile App",
+    "description": "Cross-platform mobile application built with React Native and Expo, supporting iOS and Android.",
+    "tags": ["React Native", "Expo"]
+  },
+  {
+    "title": "API Service",
+    "description": "RESTful API service with Node.js, Express, and PostgreSQL, featuring comprehensive documentation.",
+    "tags": ["Node.js", "PostgreSQL"]
+  },
+  {
+    "title": "Design System",
+    "description": "Component library and design system for consistent UI across multiple web applications.",
+    "tags": ["React", "Storybook", "CSS"]
+  },
+  {
+    "title": "CLI Tool",
+    "description": "Command-line tool for automating development workflows and project scaffolding.",
+    "tags": ["Node.js", "CLI"]
+  }
+]
