@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Building with Next.js 15",
+    "excerpt": "Exploring the new features in Next.js 15 and how they improve developer experience.",
+    "category": "Development",
+    "date": "Jun 15, 2026"
+  },
+  {
+    "title": "TypeScript Best Practices",
+    "excerpt": "A collection of TypeScript patterns and practices for cleaner, safer code.",
+    "category": "TypeScript",
+    "date": "May 28, 2026"
+  },
+  {
+    "title": "Designing with Tailwind CSS v4",
+    "excerpt": "How the new Tailwind CSS v4 changes the way we style web applications.",
+    "category": "Design",
+    "date": "May 10, 2026"
+  },
+  {
+    "title": "The Art of Clean Code",
+    "excerpt": "Principles and practices for writing maintainable, readable code.",
+    "category": "Development",
+    "date": "Apr 22, 2026"
+  }
+]
